@@ -10,7 +10,20 @@
         <ul id="livros" />
     </div>
     <div>
-        <h2>Search by ID</h2>
+        <h2>Cadastrar livro</h2>
+        <input type="text" id="livroNomeCriar" size="5" />
+        <input type="text" id="livroAutorCriar" size="5" />
+        <input type="button" value="Criar" onclick="criarLivro();" />
+    </div>
+    <div>
+        <h2>Editar livro</h2>
+        <input type="text" id="livroIdEditar" size="5" />
+        <input type="text" id="livroNomeEditar" size="5" />
+        <input type="text" id="livroAutorEditar" size="5" />
+        <input type="button" value="Editar" onclick="editarLivro();" />
+    </div>
+    <div>
+        <h2>Buscar D</h2>
         <input type="text" id="livroId" size="5" />
         <input type="button" value="Search" onclick="find();" />
         <p id="livro" />
@@ -29,6 +42,7 @@
                     $.each(data, function (key, item) {
                         // Add a list item for the product.
                         $('<li>', { text: formatItem(item) }).appendTo($('#livros'));
+                        $('<input>',{ type: "button",  value: "Deletar", onclick: "delete("+ item.id +");"})
                     });
                 });
         });
@@ -46,6 +60,29 @@
                 .fail(function (jqXHR, textStatus, err) {
                     $('#livro').text('Error: ' + err);
                 });
+        }
+
+        function criarLivro() {
+            var livro = {
+                Id: "",
+                Nome: $('#livroNomeCriar').val(),
+                Autor: $('#livroAutorCriar').val()
+            }
+            $.post(uri, livro);
+        }
+
+        function editarLivro() {
+            var livro = {
+                Id: $('#livroIdEditar').val(),
+                Nome: $('#livroNomeEditar').val(),
+                Autor: $('#livroAutorEditar').val()
+            }
+            $.ajax({
+                url: uri,
+                type: 'PUT',
+                data: JSON.stringify(livro),
+                dataType: 'json'
+            });
         }
     </script>
 </body>

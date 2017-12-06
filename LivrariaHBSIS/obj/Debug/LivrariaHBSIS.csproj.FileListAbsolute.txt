@@ -17,7 +17,6 @@ C:\Dev\LivrariaHBSIS\LivrariaHBSIS\bin\pt-br\System.Net.Http.Formatting.resource
 C:\Dev\LivrariaHBSIS\LivrariaHBSIS\bin\pt-br\System.Web.Http.resources.dll
 C:\Dev\LivrariaHBSIS\LivrariaHBSIS\bin\pt-br\System.Web.Http.WebHost.resources.dll
 C:\Dev\LivrariaHBSIS\LivrariaHBSIS\obj\Debug\LivrariaHBSIS.csprojResolveAssemblyReference.cache
-C:\Dev\LivrariaHBSIS\LivrariaHBSIS\obj\Debug\LivrariaHBSIS.csproj.CoreCompileInputs.cache
 C:\Dev\LivrariaHBSIS\LivrariaHBSIS\obj\Debug\LivrariaHBSIS.dll
 C:\Dev\LivrariaHBSIS\LivrariaHBSIS\obj\Debug\LivrariaHBSIS.pdb
 C:\Dev\LivrariaHBSIS\LivrariaHBSIS\bin\MySql.Data.dll
