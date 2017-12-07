@@ -21,3 +21,4 @@ C:\Dev\LivrariaHBSIS\LivrariaHBSIS\obj\Debug\LivrariaHBSIS.dll
 C:\Dev\LivrariaHBSIS\LivrariaHBSIS\obj\Debug\LivrariaHBSIS.pdb
 C:\Dev\LivrariaHBSIS\LivrariaHBSIS\bin\MySql.Data.dll
 C:\Dev\LivrariaHBSIS\LivrariaHBSIS\bin\MySql.Data.xml
+C:\Dev\LivrariaHBSIS\LivrariaHBSIS\obj\Debug\LivrariaHBSIS.csproj.CoreCompileInputs.cache

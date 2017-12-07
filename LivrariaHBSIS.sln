@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LivrariaHBSIS", "LivrariaHBSIS\LivrariaHBSIS.csproj", "{E580874A-E17F-423A-B239-B1F1FC20936E}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LivrariaHBSIS.Tests", "LivrariaHBSIS.Tests\LivrariaHBSIS.Tests.csproj", "{7340AB2D-F67C-4E29-89FF-DDBB7E781E96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LivrariaSelfHost", "LivrariaSelfHost\LivrariaSelfHost.csproj", "{4DD58F7F-220E-4E33-AB7D-74DFCFF745DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E580874A-E17F-423A-B239-B1F1FC20936E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E580874A-E17F-423A-B239-B1F1FC20936E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E580874A-E17F-423A-B239-B1F1FC20936E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E580874A-E17F-423A-B239-B1F1FC20936E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7340AB2D-F67C-4E29-89FF-DDBB7E781E96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7340AB2D-F67C-4E29-89FF-DDBB7E781E96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7340AB2D-F67C-4E29-89FF-DDBB7E781E96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7340AB2D-F67C-4E29-89FF-DDBB7E781E96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DD58F7F-220E-4E33-AB7D-74DFCFF745DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DD58F7F-220E-4E33-AB7D-74DFCFF745DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DD58F7F-220E-4E33-AB7D-74DFCFF745DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DD58F7F-220E-4E33-AB7D-74DFCFF745DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

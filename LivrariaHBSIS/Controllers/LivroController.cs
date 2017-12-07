@@ -4,15 +4,18 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Script.Serialization;
+using System.Web.Script.Services;
 using LivrariaHBSIS.Models;
 
 namespace LivrariaHBSIS.Controllers
 {
     public class LivroController : ApiController
     {
-        public IEnumerable<Livro> Get()
+        public Livro[] Get()
         {
-            return Livro.Get(); ;
+            var livros = Livro.Get().ToArray();
+            return livros;
         }
 
         public IHttpActionResult Post(Livro livro)
