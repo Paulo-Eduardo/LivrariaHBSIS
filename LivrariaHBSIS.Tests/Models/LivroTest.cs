@@ -58,10 +58,16 @@ namespace LivrariaHBSIS.Tests.Models
         [Test]
         public void BuscarLivro()
         {
-            var livro = Livro.Get(new Guid("da9b4918-f28f-41e4-9a5d-3a21f3f61bd8"));
-            Assert.AreEqual(livro.Id.ToString(), "da9b4918-f28f-41e4-9a5d-3a21f3f61bd8");
-            Assert.AreEqual(livro.Nome, "Teste");
-            Assert.AreEqual(livro.Autor, "Teste");
+            var livro = new Livro();
+            livro.Nome = "Nayara";
+            livro.Autor = "Paulo";
+
+            livro.Criar();
+
+            var getLivro = Livro.Get(livro.Id);
+            Assert.AreEqual(livro.Id, getLivro.Id);
+            Assert.AreEqual(livro.Nome, getLivro.Nome);
+            Assert.AreEqual(livro.Autor, getLivro.Autor);
         }
     }
 }
