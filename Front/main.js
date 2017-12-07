@@ -35,7 +35,7 @@ const app = new Vue({
           this.editandoLivro = null;
         })
       },
-      novoLivro(livro) {
+      cadastrarLivro(livro) {
         fetch("http://localhost:8080/api/Livro",{
           body: JSON.stringify(livro),
           method: "POST",
@@ -74,7 +74,7 @@ const app = new Vue({
       <h1>Criar novo livro:</h1>
       <input v-model="novoLivro.Nome" />
       <input v-model="novoLivro.Autor" />
-      <button v-on:click="novoLivro(novoLivro)">save</button>
+      <button v-on:click="cadastrarLivro(novoLivro)">save</button>
     </div>
     `,
 });
